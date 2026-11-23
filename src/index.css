@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Nyaya Sathi Navy Brand: #1e3a5f */
+    --primary: 214 52% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft navy tint */
+    --secondary: 214 33% 95%;
+    --secondary-foreground: 214 54% 19%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Nyaya Sathi Saffron Brand: #ff8c00 */
+    --accent: 33 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 33 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 33 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 33 100% 50%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  html.font-size-sm {
+    font-size: 14px;
+  }
+
+  html.font-size-normal {
+    font-size: 16px;
+  }
+
+  html.font-size-lg {
+    font-size: 18px;
+  }
+
+  body {
+    @apply font-sans transition-colors duration-200;
+  }
+
+  /* Keyboard focus states */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #ff8c00 !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* High Contrast Mode */
+html.high-contrast {
+  filter: contrast(115%);
+}
+
+html.high-contrast body {
+  background-color: #0d1117 !important;
+  color: #f0f6fc !important;
+}
+
+html.high-contrast .card,
+html.high-contrast .card-accent {
+  background-color: #161b22 !important;
+  border-color: #f0f6fc !important;
+  color: #f0f6fc !important;
+}
+
+html.high-contrast .card p,
+html.high-contrast .card-accent p,
+html.high-contrast p,
+html.high-contrast li span {
+  color: #f0f6fc !important;
+}
+
+html.high-contrast h1,
+html.high-contrast h2,
+html.high-contrast h3,
+html.high-contrast h4 {
+  color: #58a6ff !important;
+}
+
+html.high-contrast header,
+html.high-contrast footer {
+  background-color: #010409 !important;
+  border-color: #f0f6fc !important;
+}
+
+html.high-contrast .btn-primary {
+  background-color: #1f6feb !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+
+html.high-contrast .btn-saffron {
+  background-color: #d29922 !important;
+  color: #000000 !important;
+  font-weight: 800 !important;
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16;
+  }
+
+  .page-title {
+    @apply text-3xl sm:text-4xl font-bold text-navy-800 mb-4;
+  }
+
+  .page-subtitle {
+    @apply text-lg text-gray-600 mb-8 max-w-3xl;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6;
+  }
+
+  .card-accent {
+    @apply bg-gradient-to-br from-navy-50 to-white rounded-xl border border-navy-100 shadow-sm p-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-navy-600 text-white px-6 py-3 rounded-lg font-semibold
+           hover:bg-navy-700 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border-2 border-navy-600 text-navy-700 px-6 py-3 rounded-lg font-semibold
+           hover:bg-navy-50 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+  }
+
+  .btn-saffron {
+    @apply inline-flex items-center gap-2 bg-saffron-500 text-white px-6 py-3 rounded-lg font-semibold
+           hover:bg-saffron-600 transition-colors focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:ring-offset-2;
+  }
+
+  .link-external {
+    @apply text-navy-600 underline underline-offset-2 hover:text-navy-800 transition-colors;
+  }
+
+  .helpline-badge {
+    @apply inline-flex items-center gap-2 bg-saffron-50 text-saffron-800 border border-saffron-200
+           px-4 py-2 rounded-full font-semibold text-sm;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header,
+  footer,
+  .no-print,
+  button,
+  .fixed {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  .section-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .card,
+  .card-accent {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: underline !important;
+    color: black !important;
+  }
+}

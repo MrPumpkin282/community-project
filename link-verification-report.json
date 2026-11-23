@@ -1,0 +1,302 @@
+[
+  {
+    "url": "https://nalsa.gov.in/home",
+    "files": "src/components/Footer.jsx, src/pages/HowToApply.jsx, src/pages/LgbtqRights.jsx, src/pages/PoorAndMarginalized.jsx, src/pages/Resources.jsx, src/pages/RightsCard.jsx",
+    "status": "Redirected",
+    "httpCode": 200,
+    "finalUrl": "https://nalsa.gov.in/",
+    "notes": "Redirects to https://nalsa.gov.in/"
+  },
+  {
+    "url": "https://cybercrime.gov.in",
+    "files": "src/components/Footer.jsx, src/pages/CyberSafety.jsx, src/pages/Resources.jsx, src/pages/RightsCard.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://cybercrime.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://pmkisan.gov.in",
+    "files": "src/components/Footer.jsx, src/data/schemes.js, src/pages/Farmers.jsx, src/pages/Resources.jsx, src/pages/RightsCard.jsx",
+    "status": "Unverifiable / Error",
+    "httpCode": "N/A",
+    "notes": "fetch failed"
+  },
+  {
+    "url": "https://eshram.gov.in",
+    "files": "src/components/Footer.jsx, src/pages/Resources.jsx, src/pages/RightsCard.jsx, src/pages/Workers.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://eshram.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://rtionline.gov.in",
+    "files": "src/components/Footer.jsx, src/pages/Resources.jsx, src/pages/RtiGuide.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://rtionline.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://e-jagriti.gov.in",
+    "files": "src/components/Footer.jsx, src/data/schemes.js, src/pages/ConsumerRights.jsx, src/pages/Resources.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://e-jagriti.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://www.india.gov.in",
+    "files": "src/components/Footer.jsx, src/pages/Resources.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://www.india.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://nalsa.gov.in/preventive-strategic-legal-services-schemes/",
+    "files": "src/data/schemes.js, src/pages/Farmers.jsx, src/pages/Resources.jsx, src/pages/SeniorCitizens.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://nalsa.gov.in/preventive-strategic-legal-services-schemes/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://himachalpradesh.nalsa.gov.in/",
+    "files": "src/data/schemes.js, src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://himachalpradesh.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://nalsa.gov.in/directory/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://nalsa.gov.in/directory/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://arunachalpradesh.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://arunachalpradesh.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://aslsa.assam.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://aslsa.assam.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://gujarat.nalsa.gov.in/en/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://gujarat.nalsa.gov.in/en/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://jhalsa.org/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://jhalsa.org/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://karnataka.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://karnataka.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://maharashtra.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://maharashtra.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://maslsa.nic.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Unverifiable / Error",
+    "httpCode": "N/A",
+    "notes": "fetch failed"
+  },
+  {
+    "url": "https://mizoram.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://mizoram.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://pulsa.punjab.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Unverifiable / Error",
+    "httpCode": "N/A",
+    "notes": "fetch failed"
+  },
+  {
+    "url": "https://telangana.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://telangana.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://chandigarh.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://chandigarh.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://daman.nic.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Unverifiable / Error",
+    "httpCode": "N/A",
+    "notes": "fetch failed"
+  },
+  {
+    "url": "https://dslsa.org/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://dslsa.org/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://ladakh.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://ladakh.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://lakshadweep.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://lakshadweep.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://puducherry.nalsa.gov.in/",
+    "files": "src/data/slsaDirectory.js",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://puducherry.nalsa.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://consumerhelpline.gov.in",
+    "files": "src/pages/ConsumerRights.jsx",
+    "status": "Redirected",
+    "httpCode": 200,
+    "finalUrl": "https://consumerhelpline.gov.in/public/",
+    "notes": "Redirects to https://consumerhelpline.gov.in/public/"
+  },
+  {
+    "url": "https://www.swavlambancard.gov.in/",
+    "files": "src/pages/DisabilityRights.jsx, src/pages/Resources.jsx, src/pages/RightsCard.jsx",
+    "status": "Redirected",
+    "httpCode": 200,
+    "finalUrl": "https://swavlambancard.gov.in/",
+    "notes": "Redirects to https://swavlambancard.gov.in/"
+  },
+  {
+    "url": "https://disabilityaffairs.gov.in/",
+    "files": "src/pages/DisabilityRights.jsx",
+    "status": "Redirected",
+    "httpCode": 200,
+    "finalUrl": "https://depwd.gov.in/",
+    "notes": "Redirects to https://depwd.gov.in/"
+  },
+  {
+    "url": "https://pgportal.gov.in",
+    "files": "src/pages/Farmers.jsx, src/pages/Resources.jsx, src/pages/Students.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://pgportal.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://www.nic.gov.in/project/pm-kisan/",
+    "files": "src/pages/Farmers.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://www.nic.gov.in/project/pm-kisan/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://nalsa.gov.in/faqs/",
+    "files": "src/pages/Farmers.jsx, src/pages/LgbtqRights.jsx, src/pages/PoorAndMarginalized.jsx, src/pages/Resources.jsx, src/pages/WomenAndChildren.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://nalsa.gov.in/faqs/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Legal_Services_Authorities_Act_1987",
+    "files": "src/pages/Home.jsx, src/pages/PoorAndMarginalized.jsx, src/pages/Resources.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://en.wikipedia.org/wiki/Legal_Services_Authorities_Act_1987",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Lok_Adalat",
+    "files": "src/pages/Home.jsx, src/pages/HowToApply.jsx, src/pages/Resources.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://en.wikipedia.org/wiki/Lok_Adalat",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://socialjustice.gov.in/",
+    "files": "src/pages/LgbtqRights.jsx, src/pages/Resources.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://socialjustice.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://www.antiragging.in",
+    "files": "src/pages/Resources.jsx, src/pages/RightsCard.jsx, src/pages/Students.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://www.antiragging.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://www.ugc.gov.in/",
+    "files": "src/pages/Students.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://www.ugc.gov.in/",
+    "notes": "Resolves successfully"
+  },
+  {
+    "url": "https://scholarships.gov.in",
+    "files": "src/pages/Students.jsx",
+    "status": "Working",
+    "httpCode": 200,
+    "finalUrl": "https://scholarships.gov.in/",
+    "notes": "Resolves successfully"
+  }
+]
