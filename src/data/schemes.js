@@ -144,4 +144,76 @@ export const SCHEMES = {
     lastVerified: 'November 2026',
     category: 'LGBTQ+',
   },
+  pwdva: {
+    title: 'Protection of Women from Domestic Violence Act (PWDVA), 2005',
+    description:
+      'Statutory relief guaranteeing ex-parte protection orders, residence orders, maintenance, and child custody without lawyer fees through DLSAs and Protection Officers.',
+    link: 'https://www.indiacode.nic.in/handle/123456789/2021',
+    linkLabel: 'View Act on India Code',
+    lastVerified: 'November 2026',
+    category: 'Women',
+  },
+  seniorCitizensAct: {
+    title: 'Maintenance and Welfare of Parents and Senior Citizens Act, 2007',
+    description:
+      'Statutory framework empowering senior citizens (60+) to claim monthly maintenance before SDM Tribunals and revoke conditional property transfers under Section 23.',
+    link: 'https://www.indiacode.nic.in/handle/123456789/2028',
+    linkLabel: 'View Act on India Code',
+    lastVerified: 'November 2026',
+    category: 'Senior Citizens',
+  },
+  codeOnWages: {
+    title: 'Code on Wages, 2019 / Minimum Wages Framework',
+    description:
+      'Guarantees universal minimum wage entitlements, timely wage disbursement, and DLSA representation before the Labour Commissioner against wage theft.',
+    link: 'https://www.indiacode.nic.in/handle/123456789/15456',
+    linkLabel: 'View Act on India Code',
+    lastVerified: 'November 2026',
+    category: 'Workers',
+  },
+  bocwAct: {
+    title: 'Building and Other Construction Workers (BOCW) Act, 1996',
+    description:
+      'Mandatory State Welfare Board registration, accident compensation, tool assistance, health benefits, and children scholarship schemes for construction workers.',
+    link: 'https://www.indiacode.nic.in/handle/123456789/1987',
+    linkLabel: 'View Act on India Code',
+    lastVerified: 'November 2026',
+    category: 'Workers',
+  },
+  scStPoaAct: {
+    title: 'Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989',
+    description:
+      'Special court prosecution against caste-based violence, mandatory statutory financial relief, and automatic free legal counsel across all proceedings.',
+    link: 'https://www.indiacode.nic.in/handle/123456789/1944',
+    linkLabel: 'View Act on India Code',
+    lastVerified: 'November 2026',
+    category: 'SC/ST & Tribal',
+  },
+  forestRightsAct: {
+    title: 'Scheduled Tribes & Other Traditional Forest Dwellers (Forest Rights) Act, 2006',
+    description:
+      'Vests individual and community forest land rights with forest-dwelling tribes, protecting against unlawful eviction and displacement from traditional habitats.',
+    link: 'https://www.indiacode.nic.in/handle/123456789/2056',
+    linkLabel: 'View Act on India Code',
+    lastVerified: 'November 2026',
+    category: 'SC/ST & Tribal',
+  },
+  victimCompensation: {
+    title: 'Statutory Victim Compensation (Section 357A CrPC / Sec 396 BNSS)',
+    description:
+      'State-mandated victim compensation schemes providing emergency interim medical relief and rehabilitation funds for survivors of violent crimes.',
+    link: 'https://nalsa.gov.in/acts-rules/schemes/nalsa-s-compensation-scheme-for-women-victims-survivors-of-sexual-assault-other-crimes-2018',
+    linkLabel: 'View NALSA Compensation Framework',
+    lastVerified: 'November 2026',
+    category: 'Victims',
+  },
+  modelTenancyAct: {
+    title: 'Model Tenancy Act & State Rent Control Regulations',
+    description:
+      'Ministry of Housing & Urban Affairs framework establishing Rent Courts, security deposit caps, written tenancy agreements, and protections against unlawful evictions.',
+    link: 'https://mohua.gov.in/upload/uploadfiles/files/Model_Tenancy_Act_English.pdf',
+    linkLabel: 'View MoHUA Model Tenancy Act',
+    lastVerified: 'November 2026',
+    category: 'Consumers',
+  },
 };

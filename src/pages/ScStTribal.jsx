@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, ArrowRight } from 'lucide-react';
+import { Shield, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SectionLayout from '../components/SectionLayout';
 import SchemeCard from '../components/SchemeCard';
@@ -31,18 +31,36 @@ export default function ScStTribal() {
           <li className="flex gap-3">
             <span className="w-2 h-2 mt-2 rounded-full bg-purple-500 shrink-0" />
             <span>
-              <strong>Protection Against Atrocities:</strong> The Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act
-              provides legal protection against caste-based discrimination, violence, and harassment.
-              Victims can seek immediate legal help from the DLSA and statutory compensation.
+              <strong>Protection Against Atrocities:</strong> The{' '}
+              <a
+                href="https://www.indiacode.nic.in/handle/123456789/1944"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+              >
+                Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989
+                <ExternalLink className="w-3.5 h-3.5 inline" />
+              </a>{' '}
+              provides stringent legal protection against caste-based discrimination, social boycotts, physical violence, and harassment.
+              Victims are entitled to Special Court prosecution, automatic free DLSA counsel, and mandatory statutory monetary relief.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="w-2 h-2 mt-2 rounded-full bg-purple-500 shrink-0" />
             <span>
-              <strong>Forest &amp; Land Rights:</strong> The Forest Rights Act, 2006 (Scheduled Tribes and
-              Other Traditional Forest Dwellers Act) recognizes the right of tribal communities to
-              forest land, resources, and habitat. NALSA's tribal rights scheme supports enforcement
-              of these rights.
+              <strong>Forest &amp; Land Rights:</strong> The{' '}
+              <a
+                href="https://www.indiacode.nic.in/handle/123456789/2056"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+              >
+                Forest Rights Act, 2006 (FRA)
+                <ExternalLink className="w-3.5 h-3.5 inline" />
+              </a>{' '}
+              (Scheduled Tribes and Other Traditional Forest Dwellers Act) recognizes individual and community rights of tribal communities to
+              forest land, minor forest produce, and traditional habitat against unlawful eviction. NALSA's tribal rights scheme supports enforcement
+              and defense of these rights.
             </span>
           </li>
           <li className="flex gap-3">
@@ -60,7 +78,7 @@ export default function ScStTribal() {
       {/* Schemes */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-navy-800 mb-6">Relevant Schemes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <SchemeCard
             title={SCHEMES.tribalRights.title}
             description={SCHEMES.tribalRights.description}
@@ -74,6 +92,13 @@ export default function ScStTribal() {
             link={SCHEMES.samvadScheme.link}
             linkLabel={SCHEMES.samvadScheme.linkLabel}
             lastVerified={SCHEMES.samvadScheme.lastVerified}
+          />
+          <SchemeCard
+            title={SCHEMES.scStPoaAct.title}
+            description={SCHEMES.scStPoaAct.description}
+            link={SCHEMES.scStPoaAct.link}
+            linkLabel={SCHEMES.scStPoaAct.linkLabel}
+            lastVerified={SCHEMES.scStPoaAct.lastVerified}
           />
         </div>
       </section>

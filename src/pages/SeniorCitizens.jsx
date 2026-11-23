@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserCheck, ArrowRight } from 'lucide-react';
+import { UserCheck, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SectionLayout from '../components/SectionLayout';
 import SchemeCard from '../components/SchemeCard';
@@ -27,8 +27,16 @@ export default function SeniorCitizens() {
             <span className="w-2 h-2 mt-2 rounded-full bg-amber-500 shrink-0" />
             <span>
               <strong>Right to Maintenance:</strong> Under the{' '}
-              <strong>Maintenance and Welfare of Parents and Senior Citizens Act, 2007</strong>,
-              children and legal heirs are legally obligated to provide maintenance. If they fail,
+              <a
+                href="https://www.indiacode.nic.in/handle/123456789/2028"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+              >
+                Maintenance and Welfare of Parents and Senior Citizens Act, 2007
+                <ExternalLink className="w-3.5 h-3.5 inline" />
+              </a>
+              , children and legal heirs are legally obligated to provide maintenance. If they fail,
               a Maintenance Tribunal (usually at the District Magistrate / SDM level) can order monthly
               maintenance payments.
             </span>
@@ -72,11 +80,11 @@ export default function SeniorCitizens() {
             lastVerified={SCHEMES.seniorCitizens.lastVerified}
           />
           <SchemeCard
-            title="Maintenance and Welfare of Parents and Senior Citizens Act, 2007"
-            description="Guarantees the right of senior citizens to claim maintenance from children and relatives, establishes Maintenance Tribunals, and provides for protection against abuse, neglect, and abandonment."
-            link="https://nalsa.gov.in/preventive-strategic-legal-services-schemes/"
-            linkLabel="View on NALSA Schemes Page"
-            lastVerified="November 2026"
+            title={SCHEMES.seniorCitizensAct.title}
+            description={SCHEMES.seniorCitizensAct.description}
+            link={SCHEMES.seniorCitizensAct.link}
+            linkLabel={SCHEMES.seniorCitizensAct.linkLabel}
+            lastVerified={SCHEMES.seniorCitizensAct.lastVerified}
           />
         </div>
       </section>

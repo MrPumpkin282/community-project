@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle, ExternalLink } from 'lucide-react';
 import SectionLayout from '../components/SectionLayout';
 import SchemeCard from '../components/SchemeCard';
 import DocumentChecklist from '../components/DocumentChecklist';
@@ -55,13 +55,39 @@ export default function DisasterAndVictims() {
               legal aid under the Act.
             </span>
           </li>
+          <li className="flex gap-3">
+            <span className="w-2 h-2 mt-2 rounded-full bg-red-500 shrink-0" />
+            <span>
+              <strong>Statutory Victim Compensation:</strong> Under{' '}
+              <a
+                href="https://www.indiacode.nic.in/handle/123456789/16225"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+              >
+                Section 357A CrPC / Sec 396 BNSS
+                <ExternalLink className="w-3.5 h-3.5 inline" />
+              </a>{' '}
+              and the{' '}
+              <a
+                href="https://nalsa.gov.in/acts-rules/schemes/nalsa-s-compensation-scheme-for-women-victims-survivors-of-sexual-assault-other-crimes-2018"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+              >
+                NALSA Victim Compensation Schemes
+                <ExternalLink className="w-3.5 h-3.5 inline" />
+              </a>
+              , state governments are legally mandated to maintain victim compensation funds providing emergency interim relief and long-term rehabilitation for survivors of grievous crimes.
+            </span>
+          </li>
         </ul>
       </section>
 
       {/* Schemes */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-navy-800 mb-6">Relevant Schemes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           <SchemeCard
             title={SCHEMES.disasterVictims.title}
             description={SCHEMES.disasterVictims.description}
@@ -82,6 +108,13 @@ export default function DisasterAndVictims() {
             link={SCHEMES.trafficking.link}
             linkLabel={SCHEMES.trafficking.linkLabel}
             lastVerified={SCHEMES.trafficking.lastVerified}
+          />
+          <SchemeCard
+            title={SCHEMES.victimCompensation.title}
+            description={SCHEMES.victimCompensation.description}
+            link={SCHEMES.victimCompensation.link}
+            linkLabel={SCHEMES.victimCompensation.linkLabel}
+            lastVerified={SCHEMES.victimCompensation.lastVerified}
           />
         </div>
       </section>

@@ -114,6 +114,57 @@ const GOVERNMENT_PORTALS = [
   },
 ];
 
+const STATUTORY_ACTS = [
+  {
+    name: 'Protection of Women from Domestic Violence Act, 2005',
+    url: 'https://www.indiacode.nic.in/handle/123456789/2021',
+    desc: 'Act No. 43 of 2005: Ex-parte protection orders, residence orders, maintenance, and free legal aid for women.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'Maintenance and Welfare of Parents and Senior Citizens Act, 2007',
+    url: 'https://www.indiacode.nic.in/handle/123456789/2028',
+    desc: 'Act No. 56 of 2007: Monthly maintenance claims before SDM Tribunals and Section 23 property gift revocation.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'Code on Wages, 2019',
+    url: 'https://www.indiacode.nic.in/handle/123456789/15456',
+    desc: 'Act No. 29 of 2019: Universal statutory minimum wage entitlement and wage theft recovery via Labour Commissioner.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'Building and Other Construction Workers (BOCW) Act, 1996',
+    url: 'https://www.indiacode.nic.in/handle/123456789/1987',
+    desc: 'Act No. 27 of 1996: State welfare board registration, tool grants, health aid, and accident relief for labor.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'SC & ST (Prevention of Atrocities) Act, 1989',
+    url: 'https://www.indiacode.nic.in/handle/123456789/1944',
+    desc: 'Act No. 33 of 1989: Stringent protection, Special Courts, mandatory relief, and free legal aid against atrocities.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'Scheduled Tribes & Other Traditional Forest Dwellers (FRA) Act, 2006',
+    url: 'https://www.indiacode.nic.in/handle/123456789/2056',
+    desc: 'Act No. 2 of 2007: Vesting individual and community forest rights and preventing unlawful displacement.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'Section 357A CrPC / Sec 396 BNSS (Victim Compensation)',
+    url: 'https://nalsa.gov.in/acts-rules/schemes/nalsa-s-compensation-scheme-for-women-victims-survivors-of-sexual-assault-other-crimes-2018',
+    desc: 'Statutory mandate requiring states to provide financial compensation and medical rehabilitation to crime victims.',
+    verified: 'November 2026',
+  },
+  {
+    name: 'Model Tenancy Act & State Rent Control Framework (MoHUA)',
+    url: 'https://mohua.gov.in/upload/uploadfiles/files/Model_Tenancy_Act_English.pdf',
+    desc: 'Ministry of Housing & Urban Affairs framework establishing Rent Authorities, deposit caps, and eviction standards.',
+    verified: 'November 2026',
+  },
+];
+
 const HELPLINES = [
   {
     number: '15100',
@@ -264,6 +315,44 @@ export default function Resources() {
                       <Badge variant="secondary" className="text-[10px] font-normal py-0">
                         Verified: {item.verified}
                       </Badge>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Statutory Acts & Legislation */}
+        <section className="mb-14">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-2xl font-bold text-navy-800">Statutory Acts &amp; Legislative Frameworks</h2>
+              <p className="text-sm text-gray-600 mt-1">Official repository links to Central Acts, welfare frameworks, and gazette notices.</p>
+            </div>
+            <Badge variant="outline" className="hidden sm:flex text-xs text-navy-700 bg-navy-50 border-navy-200">
+              India Code &amp; Gazette Verified
+            </Badge>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {STATUTORY_ACTS.map((item) => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <Card className="h-full border-gray-200 group-hover:border-navy-400 p-4 transition-all shadow-sm group-hover:shadow flex items-start gap-3 bg-white relative overflow-hidden">
+                  <TricolorCardTop height="h-[2px]" className="opacity-70 group-hover:opacity-100" />
+                  <ExternalLink className="w-5 h-5 text-navy-600 group-hover:text-saffron-500 mt-0.5 shrink-0 transition-colors" />
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-sm">
+                      {item.name}
+                    </p>
+                    <p className="text-xs text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
+                    <div className="flex items-center gap-1.5 text-[11px] text-gray-500 mt-2 font-mono truncate">
+                      <span>{item.url.replace('https://', '')}</span>
                     </div>
                   </div>
                 </Card>

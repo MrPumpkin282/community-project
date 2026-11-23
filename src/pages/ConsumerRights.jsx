@@ -21,7 +21,17 @@ export default function ConsumerRights() {
     >
       {/* Consumer Protection Act 2019 */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-navy-800 mb-4">Consumer Protection Act, 2019 Basics</h2>
+        <h2 className="text-2xl font-bold text-navy-800 mb-4 flex flex-wrap items-center gap-2">
+          <span>Consumer Protection Act, 2019 Basics</span>
+          <a
+            href="https://www.indiacode.nic.in/handle/123456789/15256"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-normal text-navy-600 hover:text-navy-900 underline inline-flex items-center gap-1"
+          >
+            (Act No. 35 of 2019 on India Code <ExternalLink className="w-3 h-3" />)
+          </a>
+        </h2>
         <div className="prose prose-gray max-w-none">
           <ul className="space-y-3 text-gray-700">
             <li className="flex gap-3">
@@ -66,7 +76,17 @@ export default function ConsumerRights() {
             <div>
               <h3 className="text-xl font-bold text-navy-800 mb-2">Tenant & Landlord Rights</h3>
               <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                Tenancy regulations in India are governed by <strong>State Rent Control Acts</strong> (and the Model Tenancy Act where adopted by state legislatures).
+                Tenancy regulations in India are governed by <strong>State Rent Control Acts</strong> and the{' '}
+                <a
+                  href="https://mohua.gov.in/upload/uploadfiles/files/Model_Tenancy_Act_English.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+                >
+                  Model Tenancy Act (MoHUA)
+                  <ExternalLink className="w-3.5 h-3.5 inline" />
+                </a>{' '}
+                (where adopted by state legislatures).
               </p>
               <div className="p-3.5 bg-white rounded-xl border border-amber-200 text-xs text-gray-700 mb-3 space-y-2">
                 <p>
@@ -86,7 +106,7 @@ export default function ConsumerRights() {
       {/* Portals & Schemes */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-navy-800 mb-6">Official Portals & Schemes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <SchemeCard
             title={SCHEMES.consumerProtection.title}
             description={SCHEMES.consumerProtection.description}
@@ -100,6 +120,13 @@ export default function ConsumerRights() {
             link="https://consumerhelpline.gov.in"
             linkLabel="Visit consumerhelpline.gov.in"
             lastVerified="November 2026"
+          />
+          <SchemeCard
+            title={SCHEMES.modelTenancyAct.title}
+            description={SCHEMES.modelTenancyAct.description}
+            link={SCHEMES.modelTenancyAct.link}
+            linkLabel={SCHEMES.modelTenancyAct.linkLabel}
+            lastVerified={SCHEMES.modelTenancyAct.lastVerified}
           />
         </div>
       </section>

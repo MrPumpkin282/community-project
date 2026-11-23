@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ArrowRight } from 'lucide-react';
+import { Heart, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SectionLayout from '../components/SectionLayout';
 import SchemeCard from '../components/SchemeCard';
@@ -34,8 +34,17 @@ export default function WomenAndChildren() {
             <span className="w-2 h-2 mt-2 rounded-full bg-pink-500 shrink-0" />
             <span>
               <strong>Domestic violence victims</strong> can seek immediate relief, protection orders,
-              and legal representation through the DLSA. The Protection of Women from Domestic Violence
-              Act, 2005 guarantees your right to shelter, maintenance, and custody.
+              and legal representation through the DLSA. The{' '}
+              <a
+                href="https://www.indiacode.nic.in/handle/123456789/2021"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-external font-semibold inline-flex items-center gap-1 text-navy-700 hover:text-navy-900 underline"
+              >
+                Protection of Women from Domestic Violence Act, 2005
+                <ExternalLink className="w-3.5 h-3.5 inline" />
+              </a>{' '}
+              guarantees your right to shelter, maintenance, and custody without legal fees.
             </span>
           </li>
           <li className="flex gap-3">
@@ -76,11 +85,11 @@ export default function WomenAndChildren() {
             lastVerified={SCHEMES.womenCompensation.lastVerified}
           />
           <SchemeCard
-            title="Domestic Violence Redressal via DLSA"
-            description="Under the Protection of Women from Domestic Violence Act, 2005, women can approach the DLSA for immediate protection orders, residence orders, maintenance, and free legal representation."
-            link="https://nalsa.gov.in/faqs/"
-            linkLabel="NALSA FAQs"
-            lastVerified="November 2026"
+            title={SCHEMES.pwdva.title}
+            description={SCHEMES.pwdva.description}
+            link={SCHEMES.pwdva.link}
+            linkLabel={SCHEMES.pwdva.linkLabel}
+            lastVerified={SCHEMES.pwdva.lastVerified}
           />
         </div>
       </section>
